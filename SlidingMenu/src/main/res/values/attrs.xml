@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 侧滑打开时与右侧的间距 -->
+    <attr name="slidingMargin" format="dimension" />
+    <!-- 侧滑动画的延时 -->
+    <attr name="slidingDuration" format="integer" />
+    <!-- 侧滑的模式 -->
+    <attr name="slidingMode" format="enum">
+        <!-- 全屏 -->
+        <enum name="from_full_screen" value="0" />
+        <!-- 侧边 -->
+        <enum name="from_side" value="1" />
+    </attr>
+    <!-- 侧边侧滑时有效宽度 -->
+    <attr name="slidingSideWidth" format="dimension" />
+    <!-- 是否允许侧滑 -->
+    <attr name="isAllowScroll" format="boolean" />
+    <!-- 认为是快速滑动的阈值 -->
+    <attr name="velocityThreshold" format="integer" />
+
+    <!-- 侧滑菜单 -->
+    <declare-styleable name="SlidingMenu">
+        <!-- 侧滑打开时与右侧的间距 -->
+        <attr name="slidingMargin" />
+        <!-- 侧滑动画的延时 -->
+        <attr name="slidingDuration" />
+        <!-- 侧滑的模式 -->
+        <attr name="slidingMode" />
+        <!-- 侧边侧滑时有效宽度 -->
+        <attr name="slidingSideWidth" />
+        <!-- 是否允许侧滑 -->
+        <attr name="isAllowScroll" />
+        <!-- 认为是快速滑动的阈值 -->
+        <attr name="velocityThreshold" />
+
+        <!-- 菜单打开时主界面内容的遮罩颜色 -->
+        <attr name="contentMaskColor" format="color" />
+    </declare-styleable>
+
+    <!-- 带缩放的侧滑 -->
+    <declare-styleable name="ZoomSlidingMenu">
+        <!-- 侧滑打开时与右侧的间距 -->
+        <attr name="slidingMargin" />
+        <!-- 侧滑动画的延时 -->
+        <attr name="slidingDuration" />
+        <!-- 侧滑的模式 -->
+        <attr name="slidingMode" />
+        <!-- 侧边侧滑时有效宽度 -->
+        <attr name="slidingSideWidth" />
+        <!-- 是否允许侧滑 -->
+        <attr name="isAllowScroll" />
+        <!-- 认为是快速滑动的阈值 -->
+        <attr name="velocityThreshold" />
+
+        <!-- 菜单页面打开时内容页面缩放的比例 (0.0f - 1.0f) -->
+        <attr name="contentScale" format="float" />
+        <!-- 菜单页面关闭时的缩放 (0.0f - 1.0f) -->
+        <attr name="menuScale" format="float" />
+        <!-- 菜单页面关闭时的透明度 (0.0f - 1.0f) -->
+        <attr name="menuAlpha" format="float" />
+        <!-- 菜单页面评议动画的百分比 -->
+        <attr name="menuTranslation" format="float" />
+    </declare-styleable>
+
+</resources>
