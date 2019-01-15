@@ -3,6 +3,7 @@ package com.hwy.slidingmenu.widget;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +23,11 @@ public class SlidingMenu extends BaseSlidingMenu {
      * 主界面遮罩的颜色
      */
     private int mContentMaskColor = Color.parseColor("#4D000000");
+
+    /**
+     * 菜单页面的平移
+     */
+    private float mMenuTranslation = 0.6f;
 
     /**
      * 遮罩的控件
@@ -46,6 +52,7 @@ public class SlidingMenu extends BaseSlidingMenu {
         mIsAllowSliding = array.getBoolean(R.styleable.SlidingMenu_isAllowScroll, mIsAllowSliding);
         mVelocityThreshold = array.getInteger(R.styleable.SlidingMenu_velocityThreshold, mVelocityThreshold);
         mContentMaskColor = array.getColor(R.styleable.SlidingMenu_contentMaskColor, mContentMaskColor);
+        mMenuTranslation = array.getFloat(R.styleable.SlidingMenu_menuTranslation, mMenuTranslation);
         array.recycle();
     }
 
@@ -80,8 +87,12 @@ public class SlidingMenu extends BaseSlidingMenu {
 
         float scale = 1f * l / mMenuWidth;
 
+        // 设置内容视图的透明度
         float maskAlpha = 1 - scale;
         mMaskView.setAlpha(maskAlpha);
+
+        // 设置菜单视图的平移
+        ViewCompat.setTranslationX(mMenuView, mMenuTranslation * l);
     }
 
     // endregion --------------------------

@@ -18,6 +18,8 @@
     <attr name="isAllowScroll" format="boolean" />
     <!-- 认为是快速滑动的阈值 -->
     <attr name="velocityThreshold" format="integer" />
+    <!-- 菜单页面平移动画的百分比 -->
+    <attr name="menuTranslation" format="float" />
 
     <!-- 侧滑菜单 -->
     <declare-styleable name="SlidingMenu">
@@ -36,6 +38,8 @@
 
         <!-- 菜单打开时主界面内容的遮罩颜色 -->
         <attr name="contentMaskColor" format="color" />
+        <!-- 菜单页面平移动画的百分比 -->
+        <attr name="menuTranslation" />
     </declare-styleable>
 
     <!-- 带缩放的侧滑 -->
@@ -59,8 +63,8 @@
         <attr name="menuScale" format="float" />
         <!-- 菜单页面关闭时的透明度 (0.0f - 1.0f) -->
         <attr name="menuAlpha" format="float" />
-        <!-- 菜单页面评议动画的百分比 -->
-        <attr name="menuTranslation" format="float" />
+        <!-- 菜单页面平移动画的百分比 -->
+        <attr name="menuTranslation" />
     </declare-styleable>
 
 </resources>
