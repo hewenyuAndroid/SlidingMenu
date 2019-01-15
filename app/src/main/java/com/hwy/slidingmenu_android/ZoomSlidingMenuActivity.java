@@ -12,6 +12,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.hwy.slidingmenu.SlidingMode;
 import com.hwy.slidingmenu.widget.ZoomSlidingMenu;
@@ -36,6 +37,7 @@ public class ZoomSlidingMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mSlidingMenu.setSlidingMode(SlidingMode.FROM_FULL_SCREEN);
+                Toast.makeText(mContext, "全屏有效", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -43,6 +45,7 @@ public class ZoomSlidingMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mSlidingMenu.setSlidingMode(SlidingMode.FROM_SIDE);
+                Toast.makeText(mContext, "侧边有效", Toast.LENGTH_SHORT).show();
             }
         });
 
