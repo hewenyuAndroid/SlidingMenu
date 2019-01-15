@@ -365,7 +365,7 @@ public abstract class BaseSlidingMenu extends HorizontalScrollView {
     }
 
     /**
-     * 单位转换: dp -> px
+     * 单位转换: dp 2 px
      *
      * @param dpValue
      * @return
