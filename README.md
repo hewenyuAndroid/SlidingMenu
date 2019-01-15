@@ -13,7 +13,7 @@ Android侧滑框架，本项目基于HorizontalScrollView开发，主要实现�
 
 本项目中将侧滑事件抽取出来封装到一个类中 `BaseSlidingMenu` ,如果想扩展更多的自定义需求，可以子接继承自 `BaseSlidingMenu` 具体的写法参考上面两个类；
 
-[点我下载安装包](https://github.com/hewenyuAndroid/SlidingMenu/blob/master/apk/app-debug.apk)
+[点我下载安装包](https://github.com/hewenyuAndroid/SlidingMenu/raw/master/apk/app-debug.apk)
 
 ### 使用方式
 > compile 'com.hewenyu:SlidingMenu:1.0'
