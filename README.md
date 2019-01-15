@@ -1,6 +1,7 @@
 # SlidingMenu
 ### 介绍
 Android侧滑框架，本项目基于HorizontalScrollView开发，主要实现了SlidingMenu,ZoomSlidingMenu两个类，基本实现了对手势速度的监测，Menu打开时内容页面的触摸事件的拦截，具体效果见效果图:
+
 ![Zoom全屏有效](https://github.com/hewenyuAndroid/SlidingMenu/blob/master/screen/zoom_01.gif?raw=true)
 ![Zoom侧边有效](https://github.com/hewenyuAndroid/SlidingMenu/blob/master/screen/zoom_02.gif?raw=true)
 ![Zoom绑定ViewPager](https://github.com/hewenyuAndroid/SlidingMenu/blob/master/screen/zoom_03.gif?raw=true)
